@@ -1,11 +1,19 @@
 import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
 
+/**
+ * This is neccessary because 
+ * is an error in the page that is tested.
+ */
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
     // failing the test
     return false
 })
 
+/**
+ * This necessary because the tested web app is using
+ * iframes.
+ */
 Cypress.Commands.add('getIframeBody', () => {
     // get the iframe > document > body
     // and retry until the body element is not empty
