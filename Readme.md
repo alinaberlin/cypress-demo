@@ -2,7 +2,7 @@
 
 ### Intro
 
-This is test is only a demo. It doesn't follow the best practices, because is running againts release version of the site,
+This test is only a demo. It doesn't follow the best practices, because is running againts release version of the site,
 and this version is missing "data-test" attributes.
 
 
