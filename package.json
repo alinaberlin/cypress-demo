@@ -1,0 +1,25 @@
+{
+  "name": "dentolo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx cypress run --browser chrome",
+    "open": "npx cypress open"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^12.0.0"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
